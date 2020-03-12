@@ -3,8 +3,8 @@
 
 const express = require('express');
 
-const { CONFIG } = require('./config');
-const { healthCheckRouter } = require('./controllers');
+const { CONFIG, REDIS_CONFIG } = require('./config');
+const { healthCheckRouter, AppController } = require('./controllers');
 
 const app = express();
 
@@ -20,6 +20,7 @@ app.get(['/', '/api'], function(req, res, next) {
 
 // Adding routes
 app.use(CONFIG['BASE_PATH'], healthCheckRouter);
+app.use(`${CONFIG['BASE_PATH']}/stats`, AppController.stats);
 
 // Adding 404 route
 app.get('*', (req, res) => {

@@ -8,6 +8,12 @@ const CONFIG = {
   TIMESTAMP: new Date().toTimeString()
 };
 
+const REDIS_CONFIG = {
+  HOST: process.env.REDIS_HOST,
+  PORT: process.env.REDIS_PORT || 6379
+}
+
 module.exports = {
-  CONFIG
+  CONFIG,
+  REDIS_CONFIG
 };
