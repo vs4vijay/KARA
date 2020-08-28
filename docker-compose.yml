@@ -2,7 +2,7 @@ version: '3'
 services:
   redis: 
     image: 'redis'
-  karma:
+  kara:
     build: .
     ports:
       - "9999:9999"
