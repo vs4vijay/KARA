@@ -11,9 +11,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
+    "dotenv": "^16.4.5",
     "express": "^4.17.1",
-    "ioredis": "4.27.1" 
+    "ioredis": "5.4.1" 
   },
   "devDependencies": {
     "eslint": "7.25.0",
