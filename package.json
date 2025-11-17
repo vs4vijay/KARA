@@ -13,7 +13,7 @@
   "dependencies": {
     "dotenv": "^17.0.1",
     "express": "^5.0.0",
-    "ioredis": "5.7.0"
+    "ioredis": "5.8.2"
   },
   "devDependencies": {
     "eslint": "7.25.0",
