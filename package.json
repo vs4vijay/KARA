@@ -16,7 +16,7 @@
     "ioredis": "5.7.0"
   },
   "devDependencies": {
-    "eslint": "7.25.0",
+    "eslint": "10.0.0",
     "eslint-config-prettier": "8.10.2",
     "eslint-plugin-prettier": "^5.0.0",
     "nodemon": "2.0.7",
